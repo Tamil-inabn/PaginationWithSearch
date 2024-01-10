@@ -1,0 +1,27 @@
+﻿@model List<CopyData.EntityModels.Employee>
+
+
+<div class="container" style="position: absolute;top: 132px;left: 55px;">
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee Govid</th>
+                <th>Employee Department</th>
+                <th>Employee Dob</th>
+                <th>Employee Gender</th>
+            </tr>
+        </thead>
+        <tbody id="table">
+        </tbody>
+    </table>
+    <div class="table-bordered" id="pagination"></div>
+</div>
+<input type="hidden" id="CurrentPageIndex" name="CurrentPageIndex" />
+<div style="width: 200px;position: absolute;right: 100px;top: 60px;">
+    <span><b>Search Records</b></span>
+    <input type="search" class="form-control" id="search">
+</div>
+
+<script src="~/js/site.js"></script>
