@@ -74,11 +74,10 @@ $(document).on('click', '.list', function (e) {
 
 $(document).keyup("#search", function () {
     var searchdata = $("#search").val();
-    var no = $(this).attr('data-id');
     $.ajax({
         url: '/Home/TableData/',
         type: 'GET',
-        data: { 'currentPageIndex': no, "Searchdata": searchdata },
+        data: {"Searchdata": searchdata },
         success: function (result) {
             $("#table").empty();
             $.each(result.getEmployees, function (key, item) {
